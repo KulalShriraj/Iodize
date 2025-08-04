@@ -20,13 +20,13 @@ const FoodItem=({id,name,price,description,image})=> {
           <img onClick={()=>removeFromCart(id)}  src={assets.remove_icon_red} alt="" />
          
           <p>{cartItems[id]}</p>
-          <img onClick={()=>addToCart(id)}src={assets.add_icon_green} alt='' />
+          <img onClick={()=>addToCart(id)}src={assets.add_icon_green} alt="" />
         </div>
       }
    </div>
 
 
-   //1:43:00
+
     <div className="food-item-info">
         <div className="food-item-name-rating">
             <p>{name}</p>
@@ -34,7 +34,7 @@ const FoodItem=({id,name,price,description,image})=> {
         </div>
         <p className="food-item-desc">{description}</p>
         <p className="food_item-price">${price}</p>
-    </div>
+       </div>
     </div>
   )
   
